@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta charset="utf-8" />
+    <title>BookStore</title>
+  </head>
+
+  <body>
+    <!-- <nav>
+    <div class="logo">
+      <img src="images/logo.png" class="img-size"/> 
+      <span>BookStore</span>
+    </div>
+    <ul>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#home">Home</a></li>
+    </ul>
+  </nav> -->
+    <div class="container">
+      <div id="home" class="home-container">
+        <div class="about-text">
+          <p class="logo"><img src="images/logo.png" class="img-size" /></p>
+          <h1 class="header-text">Welcome to the Bookstore</h1>
+          <p class="sub-text">
+            “Books are the quietest and most constant of friends; they are the most accessible and
+            wisest of counselors, and the most patient of teachers.”
+          </p>
+          <div>
+            <button class="shop-btn" onclick="document.location='./index.html#shop'">
+              View Books
+            </button>
+          </div>
+        </div>
+        <div class="sideimg">
+          <img src="images/main-image.jpg" class="book-store-img" />
+          <div class="topright">
+            <ul>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="#shop">Books</a></li>
+              <li><a href="#about-us">About</a></li>
+              <!-- <li><a href="#home">Home</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="about-container" id="about-us">
+        <h1>About</h1>
+        <p class="abt-sub-text">
+          We sell brand new books at the lowest price. We have some expertise in books implied for
+          offspring of various ages. The wide scope of books offered by us incorporates fantasies,
+          moral stories, showed story books, reference books, general learning books, sentence
+          structure books, shading books, action books, sticker books and some more.
+        </p>
+      </div>
+      <div class="shop-container" id="shop">
+        <div class="filter">
+          <h1 style="width: 100vw;">Books</h1>
+          <div class="custom-select" style="width:200px;margin: auto;">
+            <select id="mySelect">
+              <option value="0">Select genre</option>
+              <option value="all">All genre</option>
+              <option value="adult-fiction">Adult Fiction</option>
+              <option value="science-fiction">Science Fiction</option>
+              <option value="young-adult-fiction">Young Adult Fiction</option>
+            </select>
+          </div>
+        </div>
+        <div class="adult-fiction" id="adult-fiction">
+          <div class="card-container">
+            <div class="card">
+              <img src="../Adult Fiction/Jane Eyre.jpg" class="book-img" />
+              <div class="book-title">
+                Jane Eyre
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Adult Fiction/Price and Prejudice.jpg" class="book-img" />
+              <div class="book-title">
+                Price and Prejudice
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Adult Fiction/The Adventures of Tom Sawyer.jpg" class="book-img" />
+              <div class="book-title">
+                The Adventures of Tom Sawyer
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Adult Fiction/The Great Gatsby.jpg" class="book-img" />
+              <div class="book-title">
+                The Great Gatsby
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Adult Fiction/Ulysses.jpg" class="book-img" />
+              <div class="book-title">
+                Ulysses
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="science-fiction" id="science-fiction">
+          <div class="card-container">
+            <div class="card">
+              <img src="../Science Fiction/Brave New World.jpg" class="book-img" />
+              <div class="book-title">
+                Brave New World
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Science Fiction/Cat's Cradle.jpg" class="book-img" />
+              <div class="book-title">
+                Cat's Cradle
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Science Fiction/Fahrenheit 451.jpg" class="book-img" />
+              <div class="book-title">
+                Fahrenheit 451
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Science Fiction/The Martian.jpg" class="book-img" />
+              <div class="book-title">
+                The Martian
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Science Fiction/The Time Machine.jpg" class="book-img" />
+              <div class="book-title">
+                The Time Machine
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="young-adult-fiction" id="young-adult-fiction">
+          <div class="card-container">
+            <div class="card">
+              <img src="../Young Adult Fiction/Divergent.jpg" class="book-img" />
+              <div class="book-title">
+                Divergent
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Young Adult Fiction/The Fault In Our Stars.jpg" class="book-img" />
+              <div class="book-title">
+                The Fault In Our Stars
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Young Adult Fiction/The Hunger Games.jpg" class="book-img" />
+              <div class="book-title">
+                The Hunger Games
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Young Adult Fiction/The Outsiders.jpg" class="book-img" />
+              <div class="book-title">
+                The Outsiders
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+            <div class="card">
+              <img src="../Young Adult Fiction/The Pigman.jpg" class="book-img" />
+              <div class="book-title">
+                The Pigman
+              </div>
+              <div class="price">Price - <span>CAD $14.99</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="newsletter">
+    <h1>Subscribe to our Newsletter</h1>
+    <div class="footer">
+      <form action="https://formspree.io/mknqenlv" name="newsform" method="post" onsubmit="return ValidateEmail();">
+        <input type="text" class="email-text" placeholder="Enter your email" name='email' />
+        <input type="submit" value="Subscribe" class="shop-btn" style="background-color: #ef4565;" />
+      </form>
+    </div>
+  </div> -->
+    <div class="newsletter">
+      <div class="details">
+        <p>Address: 7015 Cherry Meadow Drive, Austin TX 78745</p>
+        <p>Contact Number: 956-270-8679</p>
+        <p>Name: Rahul Selvakumar</p>
+        <p>Email: rahulselvakumar13@hotmail.com</p>
+      </div>
+      <div class="footer">
+        <h3>Subscribe to our Newsletter</h3>
+        <div>
+          <form
+            action="https://formspree.io/mknqenlv"
+            name="newsform"
+            method="post"
+            onsubmit="return ValidateEmail();"
+          >
+            <input type="text" class="email-text" placeholder="Enter your email" name="email" />
+            <input
+              type="submit"
+              value="Subscribe"
+              class="shop-btn"
+              style="background-color: #ef4565;"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

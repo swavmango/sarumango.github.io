@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css" />
+    <meta charset="utf-8" />
+    <title>BookStore</title>
+  </head>
+
+  <body>
+    <div class="container form-display">
+      <div class="contact-form">
+        <a href="./index.html" style="text-decoration: none;">
+          <i class="fas fa-arrow-left" style="font-size: 18px;"></i>
+          <span class="sub-text">back</span>
+        </a>
+        <h1 class="header-text">Contact Us</h1>
+        <p class="sub-text">Please feel free talk to us if you have any questions.</p>
+        <form
+          name="contactform"
+          method="POST"
+          action="https://httpbin.org/post"
+          onsubmit="return validate()"
+        >
+          <div class="form-field">
+            <input type="text" name="name" class="text-field" placeholder="Name" />
+          </div>
+          <div class="form-field">
+            <input type="email" name="email" class="text-field" placeholder="Email" />
+          </div>
+          <div class="form-field">
+            <input type="text" name="address" class="text-field" placeholder="Address" />
+          </div>
+          <div class="form-field">
+            <input list="cities" name="city" class="text-field" id="city" placeholder="City" />
+            <datalist id="cities">
+              <option value="Toronto"> </option>
+              <option value="Vancouver"> </option>
+              <option value="Montreal"> </option>
+              <option value="Ottawa"> </option>
+              <option value="Calgary"> </option>
+            </datalist>
+          </div>
+          <div class="form-field">
+            <input
+              type="text"
+              name="postal"
+              class="text-field"
+              placeholder="Postal Code"
+              pattern="^[0-9A-Z]{6}$"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              type="radio"
+              name="purpose"
+              id="purpose-1"
+              onclick="orderPrCheck();"
+              value="Question"
+              checked
+            /><label class="label-style">Question</label>
+            <input
+              type="radio"
+              name="purpose"
+              id="purpose-2"
+              onclick="orderPrCheck();"
+              value="Comment"
+            /><label class="label-style">Comment</label>
+            <input
+              type="radio"
+              name="purpose"
+              id="purpose-3"
+              onclick="orderPrCheck();"
+              value="Order"
+            /><label class="label-style">Order</label>
+          </div>
+          <div class="form-field">
+            <input
+              type="text"
+              name="orderNo"
+              id="orderno"
+              class="text-field"
+              placeholder="Order Number"
+              style="display: none;"
+            />
+          </div>
+          <div class="form-field">
+            <textarea
+              type="text"
+              class="message"
+              name="message"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <div>
+            <input type="text" value="Rahul" name="Rahul Selvakumar" style="display: none;" />
+          </div>
+          <div class="form-field">
+            <input
+              type="submit"
+              value="Submit"
+              class="shop-btn"
+              style="background-color: #ef4565;margin-left: 12px;"
+            />
+          </div>
+        </form>
+      </div>
+      <div>
+        <img src="./images/contact-page-banner.png" style="width: 50vw; height: 80vh;" />
+      </div>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
